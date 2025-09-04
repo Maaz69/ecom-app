@@ -1,0 +1,111 @@
+name: ecom
+description: "eCommerce app"
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+# ----------------- DEPENDENCIES ----------------- #
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  cloud_firestore: ^5.6.8
+
+  # State Management & Local Storage
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
+  # UI Utilities
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.8
+  readmore: ^3.0.0
+  carousel_slider: ^5.0.0
+  flutter_rating_bar: ^4.0.1
+  smooth_page_indicator: ^1.2.0+3
+  shimmer: ^3.0.0
+
+  # Networking & Utilities
+  http: ^1.1.0
+  intl: ^0.18.0
+  url_launcher: ^6.1.12
+  logger: ^2.0.1
+  lottie: ^3.3.1
+  connectivity_plus: ^4.0.1
+
+  # Splash and Launcher Icons (build-time tools)
+  flutter_native_splash: ^2.4.4
+  flutter_launcher_icons: ^0.14.3
+  google_sign_in: ^6.2.1
+
+# ----------------- DEV DEPENDENCIES ----------------- #
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# ----------------- FLUTTER CONFIG ----------------- #
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - assets/logos/
+    - assets/images/user/
+    - assets/images/on_boarding_images/
+    - assets/images/animations/
+    - assets/icons/categories/
+    - assets/images/banners/
+    - assets/images/products/
+    - assets/images/reviews/
+    - assets/icons/payments_methods/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/Poppins-Italic.ttf
+          weight: 400
+          style: italic
+
+# ----------------- FLUTTER NATIVE SPLASH ----------------- #
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#272727"
+  image: assets/logos/app-store-black.png
+  image_dark: assets/logos/app-store-white.png
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: assets/logos/app-store-black.png
+    image_dark: assets/logos/app-store-white.png
+
+# ----------------- FLUTTER LAUNCHER ICONS ----------------- #
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logos/app-store-white.png
